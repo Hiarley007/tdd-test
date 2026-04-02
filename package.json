@@ -1,0 +1,27 @@
+{
+  "name": "tdd-test",
+  "version": "1.0.0",
+  "description": "Aprendizagem de Testes Unitários  (TDD)",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiarley007/tdd-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hiarley007/tdd-test/issues"
+  },
+  "homepage": "https://github.com/Hiarley007/tdd-test#readme",
+  "devDependencies": {
+    "@vitest/ui": "^4.1.2",
+    "vitest": "^4.1.2"
+  }
+}
