@@ -297,7 +297,7 @@ describe('filterTasks', ( ) => {
 // ============================================================
 // 7. Contagens
 // ============================================================
-describe('countTasks', () => {
+describe('countTasks', ( ) => {
   it('deve retornar 0 para lista vazia', () => {
     expect(countTasks([])).toBe(0);
   });
@@ -312,7 +312,7 @@ describe('countTasks', () => {
   });
 });
 
-describe('countCompleted', () => {
+describe('countCompleted', ( ) => {
   let tasks;
 
   beforeEach(() => {
@@ -324,7 +324,7 @@ describe('countCompleted', () => {
   });
 
   it('deve retornar 0 para lista vazia', () => {
-    expect(countCompleted([])).toBe(0);
+    expect(countCompleted([ ])).toBe(0);
   });
 
   it('deve contar corretamente as tarefas concluídas', () => {
