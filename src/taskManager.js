@@ -63,6 +63,7 @@ export function toggleTask(task) {
   };
 }
 
+ 
 // ------------------------------------------------------------
 // Remoção
 // ------------------------------------------------------------
@@ -71,6 +72,7 @@ export function removeTask(tasks, taskId) {
   return tasks.filter((task) => task.id !== taskId);
 }
 
+/*  
 // ------------------------------------------------------------
 // Filtros
 // ------------------------------------------------------------
@@ -101,4 +103,4 @@ export function countCompleted(tasks) {
 
 export function countPending(tasks) {
   return tasks.filter((task) => task.completed === false).length;
-}
+} */
