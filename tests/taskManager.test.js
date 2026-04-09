@@ -10,7 +10,8 @@ import {
   countCompleted,
   countPending,
   resetId,
-  toggleTask
+  toggleTask,
+  validatePriority
 } from '../src/taskManager.js';
 
 // ============================================================
@@ -298,6 +299,7 @@ describe('filterTasks', ( ) => {
 // 7. Contagens
 // ============================================================
 describe('countTasks', ( ) => {
+
   it('deve retornar 0 para lista vazia', () => {
     expect(countTasks([])).toBe(0);
   });
@@ -309,6 +311,20 @@ describe('countTasks', ( ) => {
     tasks = addTask(tasks, 'Tarefa 3');
 
     expect(countTasks(tasks)).toBe(3);
+  });
+});
+
+describe('validatePriority', () => {
+  it('deve retornar true para prioridades válidas', () => {
+    expect(validatePriority('low')).toBe(true);
+    expect(validatePriority('medium')).toBe(true);
+    expect(validatePriority('high')).toBe(true);
+  });
+
+  it('deve retornar false para valores inválidos', () => {
+    expect(validatePriority('urgente')).toBe(false);
+    expect(validatePriority('')).toBe(false);
+    expect(validatePriority(null)).toBe(false);
   });
 });
 
