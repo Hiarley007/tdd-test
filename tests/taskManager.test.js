@@ -18,11 +18,11 @@ import {
 // 1. validateTitle
 // ============================================================
 describe('validateTitle', () => {
-  it('deve retornar true para um título válido', () => {
+  it('deve retornar true para um título válido', ( ) => {
     expect(validateTitle('Estudar Vitest')).toBe(true);
   });
 
-  it('deve retornar true para título com exatamente 3 caracteres', () => {
+  it('deve retornar true para título com exatamente 3 caracteres', ( ) => {
     expect(validateTitle('abc')).toBe(true);
   });
 
@@ -314,7 +314,7 @@ describe('countTasks', ( ) => {
   });
 });
 
-describe('validatePriority', () => {
+describe('validatePriority', ( ) => {
   it('deve retornar true para prioridades válidas', () => {
     expect(validatePriority('low')).toBe(true);
     expect(validatePriority('medium')).toBe(true);
