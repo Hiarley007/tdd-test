@@ -193,7 +193,7 @@ describe('toggleTask', () => {
 // ============================================================
 // 5. removeTask
 // ============================================================
-describe('removeTask', () => {
+describe('removeTask', ( ) => {
   let tasks;
 
   beforeEach(() => {

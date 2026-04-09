@@ -69,7 +69,7 @@ export function toggleTask(task) {
 // ------------------------------------------------------------
 
 export function removeTask(tasks, taskId) {
-  return tasks.filter((task) => task.id !== taskId);
+  return tasks.filter((task) => task.id !== taskId );
 }
 
 /*  
