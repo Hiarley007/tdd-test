@@ -104,3 +104,8 @@ export function countCompleted(tasks) {
 export function countPending(tasks) {
   return tasks.filter((task) => task.completed ===  false).length;
 } 
+
+
+export function validatePriority(priority) {
+  return ['low', 'medium', 'high'].includes(priority);
+}
