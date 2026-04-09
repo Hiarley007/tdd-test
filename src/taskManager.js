@@ -77,7 +77,7 @@ export function removeTask(tasks, taskId) {
 // Filtros
 // ------------------------------------------------------------
 
-export function filterTasks(tasks, status) {
+export function filterTasks(tasks,  status) {
   switch (status) {
     case 'completed':
       return tasks.filter((task) => task.completed === true);

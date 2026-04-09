@@ -241,7 +241,7 @@ describe('removeTask', ( ) => {
 // ============================================================
 // 6. filterTasks
 // ============================================================
-describe('filterTasks', () => {
+describe('filterTasks', ( ) => {
   let tasks;
 
   beforeEach(() => {
