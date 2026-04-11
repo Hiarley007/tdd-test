@@ -34,7 +34,8 @@ export function validateTitle(title) {
 // ------------------------------------------------------------
 
 export function createTask(title, priority = 'medium') {
-  return { id: _nextId++, 
+  return { 
+    id: _nextId++, 
     title: title.trim(), 
     completed: false, priority };
 }
