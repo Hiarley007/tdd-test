@@ -53,17 +53,20 @@ export function filterByPriority(tasks, priority) {
   return tasks.filter(t => t.priority === priority);
 }
 
-export function addTask(tasks, title) {
+  export function addTask(tasks, title) {
   if (!validateTitle(title)) {
     throw new Error(
       'Título inválido: deve ser uma string com pelo menos 3 caracteres.'
     );
   }
 
+  if (isDuplicate(tasks, title)) {
+    throw new Error('Tarefa duplicada não permitida!');
+  }
+
   const newTask = createTask(title);
   return [...tasks, newTask];
 }
-
 // ------------------------------------------------------------
 // Alteração de estado
 // ------------------------------------------------------------
