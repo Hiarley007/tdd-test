@@ -381,3 +381,4 @@ describe('countPending', () => {
     expect(countPending(allCompleted)).toBe(0);
   });
 });
+
