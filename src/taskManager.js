@@ -107,6 +107,9 @@ export function filterTasks(tasks,  status) {
 // ------------------------------------------------------------
 // Contagens
 // ------------------------------------------------------------
+export function sortTasks(tasks) {
+  return [...tasks].sort((a, b) => Number(a.completed) - Number(b.completed));
+}
 
 export function countTasks(tasks) {
   return tasks.length;
