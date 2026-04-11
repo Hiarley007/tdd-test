@@ -29,6 +29,11 @@ export function validateTitle(title) {
   return trimmed.length >= 3;
 }
 
+export function isDuplicate(tasks, title) {
+  const normalized = title.trim().toLowerCase();
+  return tasks.some(t => t.title.toLowerCase() === normalized);
+}
+
 // ------------------------------------------------------------
 // Criação
 // ------------------------------------------------------------
